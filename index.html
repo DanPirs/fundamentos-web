@@ -4,50 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil</title> <!--Nome do meu projeto-->
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-    <body>
-        <!--Lista desordenada-->
-        
-            <!--Li representa os itens da lista-->
-           <center> 
-            <li>
-                    <!--a leva para outra pg-->
-                    <!-- target="_blank" abre uma outra guia-->
-                <a href="index.html"> Home  || </a>
-                 <a href="contato.html">   Contato</a>
+    <body class="background">
+
+           <ul class="center">
+                <a 
+                id = "menu" 
+                href="index.html">
+                Home
+                </a>
+  
+                ||
                 
-            </li>
-            </center>
-        
-
-         <center><h1>Sobre Danilo</h1></center> <!--Titulo do projeto-->
-         <p>
-            <center> Olá! </center>
+                <a 
+                id = "menu" 
+                href="contato.html">
+                Contato
+                </a>
+            </ul>  
+            
+         <h1 class="center fonte-titulo">Sobre Danilo</h1> <!--Titulo do projeto-->
+         
+         <p class="center fonte">
+             Olá! 
          </p>
-         <p><!--Paragrafo-->
-             <center>Sou o Danilo, tenho 22 anos e moro em Poá na zona leste de SP. Sou apaixonado por viver! Por musica, aventuras, viagens, esportes, praias e natureza. <br>
-               Atualmente estudo desinvolvimento de sistemas atraves do bootcamp da Generation em busca de ingressar e me desenvolver na area. 
-            </center>
-        </p>
         
-        <p>
-           <center> Esta é a minha foto favorita: </center>
+        <div class="container">
+            <div class="p-30">
+                <p class="center fonte">
+                    Sou o Danilo, tenho 22 anos e moro em Poá na zona leste de SP. Sou apaixonado por viver! Por musica, aventuras, viagens, esportes, praias e natureza. <br>
+                    Atualmente estudo desenvolvimento de sistemas através do bootcamp da Generation em busca de ingressar e me desenvolver na area.          
+                </p>
+            </div>    
+        </div>
+
+         <p class="center fonte">
+            Esta é a minha foto favorita: 
         </p>
 
-        <center>  <img src= "img/dan.jfif" alt="Foto do Danilo em um dia ensolarado com uma praia ao fundo"></center> <!--Tag de imagem-->
+        <center>
+        <img        
+                    class="br-50 center"
+                    src= "img/dan.jfif" 
+                    alt="Foto do Danilo em um dia ensolarado com uma praia ao fundo"> 
+        </center>
         
-        <p>
-           <center> Este é o video de uma das minhas musicas favoritas: </center>
+        <p class="center fonte">
+            Este é o video de uma das minhas musicas favoritas: 
         </p>
         
-       <center> <iframe width="560" 
+        <div class="center">
+        <iframe 
+        width="560" 
         height="315" 
         src="https://www.youtube.com/embed/MpNHqJs7rXQ" 
         title="YouTube video player" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-         allowfullscreen></iframe> </center>
-
+         allowfullscreen></iframe>
+        </div>
+        <hr>
+        <footer class="center fonte">
+            <div class="container mp50">
+                    <a href="https://github.com/DanPirs" target="_blank">
+                <img class="tm p-30" src="img/github.png" alt="Link github Danilo">
+                    </a> 
+                    <a href="https://www.linkedin.com/in/danilo-pires-da-silva/" target="_blank">  
+                <img class="tm p-30" src="img/linkedin.png" alt="Link Linkedin Danilo">
+                    </a>
+                    <a href="https://dpblogpessoal.herokuapp.com" target="_blank">
+                <img class="tm p-30" src="img/blog.png" alt="Link Blog Pessoal">   
+                    </a>
+            </div>
+           Todos os direitos reservados a Danilo Pires &copy;
+        </footer>
     </body>
 </html>

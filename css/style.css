@@ -1,0 +1,73 @@
+/*Aqui estao todos os Styles da pagina index*/
+.background {
+    background-color:lightblue;
+}
+.fonte{
+    font-family: 'cascadia Code', sans-serif;
+    color: navy;
+}
+.fonte-titulo{
+        font-family: 'Gabriola', sans-serif;
+        color: navy;
+}
+.center {
+    text-align: center;
+    justify-content: center;
+ }
+ .container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .end {
+    display: flex;
+    justify-content: flex-end;
+ }
+
+ .p-30{
+     padding: 30px;
+ }
+
+ .br-50{
+
+     padding: 70px;
+     border-radius: 50%;
+ }
+
+ .tm{
+     width: 50px;
+     height: 50px;
+ }
+ .mp50{
+     margin-bottom: 40px;
+ }
+
+ #menu {
+     display: line;
+     padding: 30px;
+     text-decoration: none;
+     color: navy;
+     align-items: center;
+ }
+
+ #menu:hover {
+    color:white;
+ }
+
+/*Aqui estao todos os Styles da pagina contato*/
+.ml-50{
+    margin-left: 50px;
+}
+.mr-50{
+    margin-right: 50px;
+}
+.br-15{
+
+    padding: 15px;
+    border-radius: 15%;
+}
+
+
+
