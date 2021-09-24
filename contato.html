@@ -23,25 +23,29 @@
         <div>
             <form class="mr-50">
                 <label class="fonte" for="nome">Nome: </label> 
-                <input type="text" id="nome">
-         
-            
-                <label class="fonte" for="email">E-mail: </label> 
-                <input type="email" id="email">
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+                <br>
+                <label class="fonte" for="email">E-mail: </label>                 
+                <input type="email" id="email"  onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
                 <br>
                 <br>
                 <label class="fonte" for="assunto">Assunto: </label> 
-                <textarea name="Assunto" id="assunto" cols="70" rows="13"></textarea>
-            
                 <br>
+                <textarea name="Assunto" id="assunto" cols="67" rows="13" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
                 <br>
-                <button class="fonte">Enviar</button>
+                <button onclick="validaEnviar()" class="fonte">Enviar</button>
             </form> 
         </div>
             <div class="ml-50 fonte">
                 <p>Av 9 de Julho 633</p> 
                 <p>Poá-SP, Brasil</p>
-                <iframe class="br-15"
+                <iframe onmousemove="mapaZoom()"
+                    onmouseout="mapaNormal()"
+                    id="mapa"
+                    class="br-15"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!
                     1m3!1d58524.676216255204!2d-46.38346069603956!3d-23.539972941746175!
                     2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7adb7b470301%3A0xdacb5b740208149!
@@ -69,5 +73,6 @@
     </div>
    Todos os direitos reservados a Danilo Pires &copy;
     </footer>
+    <script src="js/script.js"></script>
     </body>
 </html>
